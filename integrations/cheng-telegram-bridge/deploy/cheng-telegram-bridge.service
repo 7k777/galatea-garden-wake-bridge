@@ -5,9 +5,9 @@ Wants=network-online.target
 
 [Service]
 Type=simple
-WorkingDirectory=/opt/cheng-telegram-bridge/app
+WorkingDirectory=/opt/cheng-telegram-bridge/app/integrations/cheng-telegram-bridge
 EnvironmentFile=/opt/cheng-telegram-bridge/.env
-ExecStart=/usr/bin/node /opt/cheng-telegram-bridge/app/dist/server.js
+ExecStart=/usr/bin/node /opt/cheng-telegram-bridge/app/integrations/cheng-telegram-bridge/dist/server.js
 Restart=always
 RestartSec=3
 User=root
